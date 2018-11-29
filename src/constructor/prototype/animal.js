@@ -9,7 +9,7 @@ const Animal = function(options = defaultOptions) {
 };
 
 Animal.prototype.getFullName = function() {
-  return `${this.name}, ${this.specie}`;
-};
+  return `${this.name}, ${this.specie}`
+}
 
 export default Animal;

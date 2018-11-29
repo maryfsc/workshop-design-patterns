@@ -9,15 +9,17 @@ describe("Animal", function () {
       it("should be instantiate Animal", function () {
         expect(animal.name).to.be("Default Animal");
         expect(animal.specie).to.be("Unspecified");
+        expect(animal.family).to.be("Unspecified");
       });
     });
 
     describe("with parameters", function () {
-      let lion = new Animal({name: "Lion", specie: "Mammal"});
+      let lion = new Animal({name: "Lion", specie: "Mammal", family: "Felidae"});
 
       it("should be instantiate a Lion", function () {
         expect(lion.name).to.be("Lion");
         expect(lion.specie).to.be("Mammal");
+        expect(lion.family).to.be("Felidae");
       });
     });
   });
@@ -31,3 +33,10 @@ describe("Animal", function () {
   });
 });
 
+describe("#getFamily()", function () {
+  let animal = new Animal();
+
+  it("should return family of animal", function () {
+    expect(animal.getFamily()).to.be("Unspecified");
+  });
+});
