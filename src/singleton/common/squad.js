@@ -11,6 +11,7 @@ const Squad = function () {
       addPlayer: (options) => {
         const newPlayer = new FootballPlayer(options);
         players.push(newPlayer);
+        
         return players;
       }
     }

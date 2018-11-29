@@ -21,13 +21,12 @@ const Subject = function() {
         this.observers[index].notify(value);
       }
     },
-
     notifyAll(value) {
-      for (let i = 0; i < this.observers.length; i += 1) {
+      for (let i = 0; i < this.observers.length; i+= 1) {
         this.observers[i].notify(value);
       }
-    },
-  };
+    }
+  } 
 };
 
 export default Subject;
