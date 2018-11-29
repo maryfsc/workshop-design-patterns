@@ -1,7 +1,7 @@
 const defaultOptions = {
   name: "Default Name",
-  age: 18,
-};
+  age: 18
+}
 
 const Player = function(options = defaultOptions) {
   return {
@@ -10,7 +10,7 @@ const Player = function(options = defaultOptions) {
     getFullName() {
       return `${this.name}, ${this.age}`;
     }
-  };
-};
+  }
+}
 
 export default Player;
