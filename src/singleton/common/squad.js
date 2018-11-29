@@ -1,6 +1,6 @@
 import FootballPlayer from '../../module/common/football-player.js';
 
-const Squad = function() {
+const Squad = function () {
   let instance = null;
 
   const init = function() {
@@ -10,13 +10,11 @@ const Squad = function() {
       getPlayers: () => players,
       addPlayer: (options) => {
         const newPlayer = new FootballPlayer(options);
-
         players.push(newPlayer);
-
         return players;
       }
-    };
-  };
+    }
+  }
 
   return {
     getInstance: () => {
@@ -25,8 +23,8 @@ const Squad = function() {
       }
 
       return instance;
-    },
-  };
-};
+    }
+  }
+}
 
 export default Squad;
